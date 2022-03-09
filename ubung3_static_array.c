@@ -14,7 +14,7 @@ double calc_resistance (int len, int ar[]) {
 	int i;
 	double res = 0.0, total_res;
 	
-	printf("The input resistance values are: ")
+	printf("The input resistance values are: ");
 	for (i = 0; i < len; i++) {
 		res += 1. / ar[i];
 		printf("%d ", ar[i]);
