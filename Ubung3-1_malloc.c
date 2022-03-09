@@ -55,6 +55,7 @@ int get_resistances() {
 			// because if there are two functions to be written, get_resistances
 			// cannot return both the length of the array and the array itself.
 			// It can only return one value.
+	free(array);
 	return 0;
 }
 
