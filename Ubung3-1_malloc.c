@@ -111,8 +111,7 @@ void main() {
 	int arrlen = get_len();
 		
 	int *arr = get_resistances(arrlen);
-	printf("%d\n", sizeof(*arr));
-	printf("%d\n", sizeof(*arr) / sizeof(int));
+
 	double totalR = calc_resistance(arrlen, arr);
 	
 	printf("The number of parallel resistors: %d \n", arrlen);
