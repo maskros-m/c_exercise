@@ -7,10 +7,10 @@ void str_inverse_case(char str[]) {
 	int len = strlen(str);
 	for (short unsigned i = 0; i < len; i++) {
 		if (islower(str[i]) != 0) {
-			str[i] = isupper(str[i]);
+			str[i] = toupper(str[i]);
 			printf("%c", str[i]);
 		} else if (isupper(str[i]) != 0) {
-			str[i] = islower(str[i]);
+			str[i] = tolower(str[i]);
 			printf("%c", str[i]);
 		}
 	}
