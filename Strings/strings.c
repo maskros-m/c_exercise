@@ -31,13 +31,30 @@ bool str_starts_with(char str[], char prefix[]) {
 }
 
 
+bool str_ends_with(char str[], char suffix[]) {
+	int len_str = strlen(str);
+	int len_suf = strlen(suffix);
+	bool isSuffix = false;
+	
+	for (int i = 0; i < len_suf; i++) {
+		int j = len_str - len_suf + i;
+		if (suffix[i] == str[j]) {
+			isSuffix = true;
+		} else {
+			isSuffix = false;
+		}
+	}
+	return isSuffix;
+}
+
+
 int main() {
   /* Inverting case in a string */
 	char inverse_case[] = "Hello World!";
 	str_inverse_case(inverse_case);
   
   /* Checking string's prefix */
-  char str[] = "This is a text";
+  	char str[] = "This is a text";
 	char substr_1[] = "This is";
 	bool res = str_starts_with(str, substr_1);
 	if (res == true) printf("true\n");
@@ -50,4 +67,17 @@ int main() {
 	res = str_starts_with(str, substr_3);
 	if (res == true) printf("true\n");
 	else printf("false\n");
+	
+/* Checking string's suffix */
+	char suff[] = "s a text";
+	char suff_1[] = " a text.";
+	bool result = str_ends_with(str, suff);
+	if (result == true) printf("true\n");
+	else printf("false\n");
+	result = str_ends_with(str, suff_1);
+	if (result == true) printf("true\n");
+	else printf("false\n");
+	
+/* */
+	
 }
