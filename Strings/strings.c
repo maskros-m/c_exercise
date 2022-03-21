@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
+#include <stdbool.h>
 
 void str_inverse_case(char str[]) {
 	int len = strlen(str);
