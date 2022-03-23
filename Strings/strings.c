@@ -199,4 +199,6 @@ int main() {
     char str_2[] = "Bantantantant"; 
     char sub_2[] = "ant";
     printf("%d\n", str_index(str_2, sub_2));  // --> 1
+	
+    return 0;
 }
