@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.10)
+
+# setting project's name
+project(inventory)
+
+# add executable file
+add_executable(inventory inventory.cxx)
+
+# woher kommt die .cxx???
